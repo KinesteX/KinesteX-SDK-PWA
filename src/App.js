@@ -8,7 +8,6 @@ const App = () => {
 
   const postData = {
     userId: 'USER TEST',
-    category: '', // leave empty if you do not want to display it
     planC: 'Cardio',
     company: 'YOUR COMPANY NAME',
     key: 'YOUR KEY',
@@ -30,7 +29,7 @@ const App = () => {
           console.log('Received data:', message.data);
      
         }
-        if (message.type === 'exitApp') {
+        if (message.type === 'exit_kinestex') {
           toggleWebView();
         }
         if (message.type === 'error_occured') {
