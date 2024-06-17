@@ -36,14 +36,6 @@ Add the following keys for camera and microphone usage:
 | **Weight Management** | 
 
 
-### Available categories and sub categories to sort workouts: 
-
-| **Category (key: category)** | 
-| --- | 
-| **Fitness** | 
-| **Rehabilitation** |
-
-
 ## Available parameters:
 ```jsx
   const postData = {
