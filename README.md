@@ -39,13 +39,12 @@ Add the following keys for camera and microphone usage:
 ## Available parameters:
 ```jsx
   const postData = {
-// REQUIRED
+    // REQUIRED
     userId: 'YOUR USER ID',
     company: 'YOUR COMPANY', // contact KinesteX
     key: 'YOUR KEY', // contact KinesteX
-// OPTIONAL
-    category: 'Fitness',
     planC: 'Cardio',
+    // OPTIONAL
     age: 50,
     height: 150, // in cm
     weight: 200, // in kg
@@ -85,7 +84,7 @@ To listen to user events:
           console.log('Received data:', message.data);
      
         }
-        if (message.type === 'exitApp') {
+        if (message.type === 'exit_kinestex') {
           toggleWebView();
         }
         if (message.type === 'error_occured') {
